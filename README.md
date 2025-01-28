@@ -16,6 +16,8 @@
 
 > ~> \_ide_helper.php
 
+> php artisan serve
+
 ### Changed User -> Admin migrations
 
 > php artisan migrate:fresh
@@ -27,3 +29,13 @@
 ## Seed users into the DBB
 
 > php artisan db:seed
+
+### Different Dashboard fro User <-> Admin
+
+> php artisan make:controller Admin/AdminDashboardController
+
+# Added Admin View
+
+> /resources/views/admin/dashboard/index.php
+
+> AdminDashboardController ->
