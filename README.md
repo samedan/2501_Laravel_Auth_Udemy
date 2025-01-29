@@ -38,4 +38,34 @@
 
 > /resources/views/admin/dashboard/index.php
 
-> AdminDashboardController ->
+> AdminDashboardController -> return view('admin.dashboard.index');
+
+### Admin User Middleware
+
+> php artisan make:middleware RoleMiddleware
+
+# Add it to App
+
+> Kernel.php -> 'role' => \App\Http\Middleware\RoleMiddleware::class,
+
+# Route middleware
+
+> web.php -> Route::get('admin/dashboard', [AdminDashboardController::class,'index'])->middleware('auth', 'role:admin')
+
+# Default redirection from admin login
+
+> http/Controllers/Auth/AuthenticatedSessionController.php -> return redirect()->intended(RouteServiceProvider::HOME);
+
+# Declare route for admin
+
+> Providers/RouteServiceProvider.php -> public const ADMIN = 'admin/dashboard';
+
+### New Route file for Admin
+
+> /routes/admin.php
+
+> Providers/RouteServiceProvider.php -> Route::middleware(['web', 'auth', 'role:admin'])
+
+# Admin routes in group
+
+< /routes/admin.php -> Route::group(['prefix' => 'admin', 'as' => 'admin.'])
