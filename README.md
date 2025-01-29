@@ -69,3 +69,9 @@
 # Admin routes in group
 
 < /routes/admin.php -> Route::group(['prefix' => 'admin', 'as' => 'admin.'])
+
+### Admin CSS template
+
+> /views/admin/dashboard/index.blade.php -> @extends('admin.layouts.master'), @section('content')
+
+> /views/admin/layouts/master.blade.php -> @yield('content')
