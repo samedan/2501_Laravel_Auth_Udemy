@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers\Frontend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\Request;
+
+class FrontendController extends Controller
+{
+    public function index(): View {
+        //resources/views/frontend/home.index.blade.php
+        return view("frontend.home.index");
+        // return view("frontend.layouts.master");
+    }
+}

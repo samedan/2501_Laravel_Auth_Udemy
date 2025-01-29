@@ -17,4 +17,5 @@ yarn-error.log
 /.idea
 /.vscode
 /resources/views/1_admin-template
+/resources/views/1_frontend-template
 /public/admin/assets
