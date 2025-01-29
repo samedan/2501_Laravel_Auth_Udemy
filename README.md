@@ -75,3 +75,11 @@
 > /views/admin/dashboard/index.blade.php -> @extends('admin.layouts.master'), @section('content')
 
 > /views/admin/layouts/master.blade.php -> @yield('content')
+
+### Easy snippet
+
+### Toastr
+
+> https://github.com/yoeunes/toastr
+
+> frontend/master.blade.php -> foreach(error)
