@@ -115,6 +115,7 @@
     <!--main/custom js-->
     <script src="{{ asset('frontend/js/main.js')}}"></script>
     <script>
+        toastr.options.progressBar = true;
         @if($errors->any())
             @forEach($errors->all() as $error)
                   toastr.error("{{ $error }}");

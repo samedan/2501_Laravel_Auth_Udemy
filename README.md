@@ -82,4 +82,6 @@
 
 > https://github.com/yoeunes/toastr
 
+> https://github.com/CodeSeven/toastr
+
 > frontend/master.blade.php -> foreach(error)
