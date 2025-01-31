@@ -133,7 +133,7 @@
                                 </div>
                             </form>
 
-                            <p class="create_account">You have an account ? <a href="sign_in.html">login</a></p>
+                            <p class="create_account">You have an account ? <a href="{{  route('login') }}">Login</a></p>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 ### Source Udemy
 
-> https://www.udemy.com/course/build-complete-laravel-restaurant-and-food-ordering-ecommerce-system/learn/lecture/40032480#overview
+> https://www.udemy.com/course/build-complete-laravel-restaurant-and-food-ordering-ecommerce-system/learn/lecture/38820316#overview
+
+### Source Git :
+
+https://github.com/websolutionus/udemy_restaurant_foodpark/blob/main/main-files/app/Http/Controllers/Admin/AdminDashboardController.php
 
 ### This Git
 
@@ -85,3 +89,27 @@
 > https://github.com/CodeSeven/toastr
 
 > frontend/master.blade.php -> foreach(error)
+
+### Reset password ask page
+
+> PasswordResteLinkController.php -> toastr('Reset link sent into your email.', 'success');
+
+> forgot-password.blade.php
+
+# Check password reset page
+
+> reset-password.blade.php
+
+### Login page for Admin
+
+# view
+
+> /resources/views/admin/auth/login.blade.php
+
+# controller
+
+> php artisan make:controller Admin/AdminAuthController
+
+# route
+
+> web.php -> Route::get('admin/login', [AdminAuthController::class,'index'])->name('admin.login');

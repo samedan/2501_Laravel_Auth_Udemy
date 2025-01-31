@@ -114,7 +114,7 @@
                                                     Remeber Me
                                                 </label>
                                             </div>
-                                            <a href="forgot_password.html">Forgot Password ?</a>
+                                            <a href="{{  route('password.request') }}">Forgot Password ?</a>
                                         </div>
                                     </div>
 
@@ -127,7 +127,7 @@
                                 </div>
                             </form>
 
-                            <p class="create_account">Dont’t have an account ? <a href="sign_up.html">Create Account</a>
+                            <p class="create_account">Dont’t have an account ? <a href="{{ route('register')  }}">Create Account</a>
                             </p>
                         </div>
                     </div>

@@ -114,6 +114,8 @@
 
     <!--main/custom js-->
     <script src="{{ asset('frontend/js/main.js')}}"></script>
+
+    {{-- show dynamic validation message --}}
     <script>
         toastr.options.progressBar = true;
         @if($errors->any())
